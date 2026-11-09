@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "anglehud",
+  "version": "${version}",
+  "name": "Angle HUD",
+  "description": "Winkel-, Richtungs- und Koordinaten-Anzeige mit Farbrad, frei verschiebbar, plus Chat-Übersetzer (Deutsch/Englisch). Menü über Mod Menu oder /winkel.",
+  "authors": ["du"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.anglehud.AngleHudClient"],
+    "modmenu": ["com.anglehud.ModMenuIntegration"]
+  },
+  "mixins": ["anglehud.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
